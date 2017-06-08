@@ -4,6 +4,18 @@ issues closed 335
 pull requests 191
 list of distros
 
+consider management/rebase-bin for renaming, etc
+	rename-structs.sed
+	remove-checked-comments.sed
+	strcmp.cocci
+	set-pointer-null.cocci
+	common.sh
+	dprint.cocci
+	README.md
+	rename-functions.sed
+	merge-upstream.sh
+	tidy-return.cocci
+
 updated translations
 	German
 	Spanish
@@ -24,7 +36,7 @@ code
 		iconv compulsory
 
 	tidying
-		whitespace / control chars
+		whitespace / tabs / control chars
 		clang-format
 		iwyu
 		drop __CHECK*
@@ -52,6 +64,7 @@ code
 		use SEEK_SET SEEK_CUR SEEK_END
 		sizeof X -> sizeof(X)
 		fix calloc args (num, size)
+		FOREVER, etc
 
 	renaming
 		hyphen -> underscore
