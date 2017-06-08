@@ -1,0 +1,29 @@
+Attach Headers Color     Color attachment headers using regexp, just like mail bodies         2016-09-10 stable
+Compose to Sender        Send new mail to the sender of the current mail                      2016-10-02 stable
+Compressed Folders       Read from/write to compressed mailboxes                              2016-05-30 stable
+Conditional Dates        Use rules to choose date format                                      2016-03-07 stable
+Encrypt-to-Self          Save a self-encrypted copy of emails                                 2016-07-23 stable
+Fmemopen                 Replace some temporary files with memory buffers                     2016-03-07 disabled
+Forgotten Attachment     Alert user when (s)he forgets to attach a file to an outgoing email. 2016-09-10 stable
+Global Hooks             Define actions to run globally within Mutt                           2016-08-08 stable
+Ifdef                    Conditional config options                                           2016-03-07 stable
+Index Color              Custom rules for theming the email index                             2016-03-07 stable
+Initials Expando         Expando for author's initials                                        2016-03-07 stable
+Keywords                 Labels/Tagging for emails                                            2016-05-30 stable
+Kyoto Cabinet            Kyoto Cabinet backend for the header cache                           2016-10-02 stable
+Limit Current Thread     Focus on one Email Thread                                            2016-03-28 stable
+LMDB                     LMDB backend for the header cache                                    2016-07-23 stable
+Multiple FCC             Save multiple copies of outgoing mail                                2016-08-08 stable
+Nested If                Allow complex nested conditions in format strings                    2016-03-07 stable
+New Mail                 Execute a command upon the receipt of new mail.                      2016-07-23 stable
+NNTP                     Talk to a Usenet news server                                         2016-05-30 stable
+Notmuch                  Email search engine                                                  2016-03-17 stable
+Progress Bar             Show a visual progress bar on slow operations                        2016-03-07 stable
+Quasi-Delete             Mark emails that should be hidden, but not deleted                   2016-03-07 stable
+Reply With X-Original-To Direct reply to email using X-Original-To header                     2016-09-10 stable
+Sensible Browser         Make the file browser behave                                         2016-09-10 stable
+Sidebar                  Overview of mailboxes                                                2016-03-07 stable
+Skip Quoted              Leave some context visible                                           2016-03-28 stable
+Status Color             Custom rules for theming the status bar                              2016-03-07 stable
+TLS-SNI                  Negotiate with a server for a TLS/SSL certificate                    2016-03-07 stable
+Trash Folder             Automatically move deleted emails to a trash bin                     2016-03-07 stable 

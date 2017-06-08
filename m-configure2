@@ -1,0 +1,15 @@
+Compulsory:
+	--disable-iconv
+	--enable-compressed
+	--enable-imap
+	--enable-mailtool
+	--enable-pop
+	--enable-sidebar
+	--enable-smtp
+	--with-regex
+	--with-included-gettext
+
+Obsolete:
+	--enable-external-dotlock
+	--enable-hcache
+

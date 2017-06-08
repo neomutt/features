@@ -1,0 +1,12 @@
+Optional:
+	--enable-fmemopen
+	--enable-lua
+	--enable-notmuch
+
+Devel:
+	--disable-po
+	--enable-everything
+
+Removed:
+	--enable-dotlock
+
