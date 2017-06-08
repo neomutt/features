@@ -1,5 +1,5 @@
 18 months
-~1000 commits
+~1000 commits (550 in upstream)
 issues closed 335
 pull requests 191
 list of distros
@@ -260,10 +260,12 @@ code
 			credits for all contributors
 	misc
 		travis
+            https://travis-ci.org/neomutt
 			travis-build script
 			translation build test
 		coverity
-			fix >200 defects (0.7)
+            https://scan.coverity.com/projects/neomutt-neomutt
+			fix >200 defects (0.70 defect density)
 			resource leaks, etc
 	dropped
 		regex
