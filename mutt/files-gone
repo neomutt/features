@@ -4,6 +4,7 @@
 ABOUT-NLS
 BEWARE
 build-release
+ChangeLog
 check_sec.sh
 contrib/ca-bundle.crt
 contrib/mutt_xtitle
@@ -13,10 +14,13 @@ contrib/sample.vimrc-sidebar
 crypthash.h
 doc/applying-patches.txt
 doc/devel-notes.txt
+doc/dotlock.man
 doc/makedoc-defs.h
 doc/muttbug.man
 doc/patch-notes.txt
 doc/TODO
+dotlock.c
+dotlock.h
 GPL
 hg-changelog-map
 hg-commit
@@ -34,11 +38,14 @@ README.SECURITY
 regex.c
 setenv.c
 snprintf.c
+stamp-h.in
 strcasecmp.c
+strcasestr.c
 strdup.c
 strsep.c
 strtok_r.c
 TODO
+UPDATING
 VERSION
 version.sh
 _regex.h

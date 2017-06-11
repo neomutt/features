@@ -170,6 +170,8 @@ mime_forward
 mime_forward_decode
 mime_forward_rest
 mime_subject
+mixmaster
+mix_entry_format
 move
 narrow_tree
 net_inc
@@ -353,9 +355,11 @@ sort_browser
 sort_re
 spam_separator
 spoolfile
+ssl_ca_certificates_file
 ssl_ciphers
 ssl_client_cert
 ssl_force_tls
+ssl_min_dh_prime_bits
 ssl_starttls
 ssl_usesystemcerts
 ssl_use_sslv2

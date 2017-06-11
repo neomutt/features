@@ -11,8 +11,7 @@ alias.h
 body.h
 buffer.c
 buffer.h
-ChangeLog.neomutt
-ChangeLog.nntp
+ChangeLog.md
 content.h
 context.h
 contrib/hcache-bench/muttrc
@@ -68,7 +67,6 @@ po/mutt.pot
 README.md
 state.h
 thread.h
-UPDATING.kz
 version.c
 version.h
 where.h

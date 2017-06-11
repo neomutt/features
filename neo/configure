@@ -1,4 +1,4 @@
-`configure' configures NeoMutt 20170602 to adapt to many kinds of systems.
+`configure' configures NeoMutt 20170609 to adapt to many kinds of systems.
 
 Usage: ./configure [OPTION]... [VAR=VALUE]...
 
@@ -78,14 +78,10 @@ Optional Features:
   --disable-smime         Disable SMIME support
   --enable-lua            Enable lua scripting support
   --enable-notmuch        Enable NOTMUCH support
-  --enable-dotlock        Define to build mutt_dotlock.
   --enable-debug          Enable debugging support
   --enable-flock          Use flock() to lock files
   --disable-fcntl         Do NOT use fcntl() to lock files
-  --disable-warnings      Turn off compiler warnings (not recommended)
-  --enable-nfs-fix        Work around an NFS with broken attributes caching
   --enable-locales-fix    The result of isprint() is unreliable
-  --enable-exact-address  Enable regeneration of email addresses
   --disable-nls           do not use Native Language Support
   --disable-rpath         do not hardcode runtime library paths
   --enable-fmemopen       Use fmemopen
@@ -108,7 +104,6 @@ Optional Packages:
   --with-ssl[=PFX]        Enable TLS support using OpenSSL
   --with-gnutls[=PFX]     enable TLS support using gnutls
   --with-sasl[=PFX]       Use SASL network security library
-  --with-exec-shell=SHELL Specify alternate shell (ONLY if /bin/sh is broken)
   --with-gdbm[=DIR]       Use gdbm for the header cache
   --with-tokyocabinet[=DIR]
                           Use tokyocabinet for the header cache

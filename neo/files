@@ -26,9 +26,7 @@ buffer.c
 buffer.h
 buffy.c
 buffy.h
-ChangeLog
-ChangeLog.neomutt
-ChangeLog.nntp
+ChangeLog.md
 charset.c
 charset.h
 color.c
@@ -104,7 +102,6 @@ curs_lib.c
 curs_main.c
 date.c
 doc/chunk.xsl
-doc/dotlock.man
 doc/gen-map-doc
 doc/html.xsl
 doc/instdoc.sh.in
@@ -129,8 +126,6 @@ doc/pgpewrap.man
 doc/pgpring.man
 doc/smime-notes.txt
 doc/smime_keys.man
-dotlock.c
-dotlock.h
 edit.c
 editmsg.c
 enter.c
@@ -365,17 +360,13 @@ smime_keys.pl
 smtp.c
 sort.c
 sort.h
-stamp-h.in
 state.h
 status.c
-strcasestr.c
 system.c
 thread.c
 thread.h
 txt2c.c
 txt2c.sh
-UPDATING
-UPDATING.kz
 url.c
 url.h
 utf8.c

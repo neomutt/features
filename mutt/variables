@@ -53,6 +53,7 @@ delete
 delete_untag
 digest_collapse
 display_filter
+dotlock_program
 dsn_notify
 dsn_return
 duplicate_threads
@@ -81,6 +82,7 @@ hdrs
 header
 header_cache
 header_cache_compress
+header_cache_pagesize
 help
 hidden_host
 hide_limited
@@ -148,6 +150,8 @@ mh_seq_unseen
 mime_forward
 mime_forward_decode
 mime_forward_rest
+mixmaster
+mix_entry_format
 move
 narrow_tree
 net_inc
@@ -293,9 +297,11 @@ sort_browser
 sort_re
 spam_separator
 spoolfile
+ssl_ca_certificates_file
 ssl_ciphers
 ssl_client_cert
 ssl_force_tls
+ssl_min_dh_prime_bits
 ssl_starttls
 ssl_usesystemcerts
 ssl_use_sslv2

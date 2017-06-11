@@ -1,4 +1,4 @@
-NeoMutt 20170602 (1.8.3)
+NeoMutt 20170609 (1.8.3)
 usage: mutt [<options>] [-z] [-f <file> | -yZ]
        mutt [<options>] [-Ex] [-Hi <file>] [-s <subj>] [-bc <addr>] [-a <file> [...] --] <addr> [...]
        mutt [<options>] [-x] [-s <subj>] [-bc <addr>] [-a <file> [...] --] <addr> [...] < message

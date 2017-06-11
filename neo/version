@@ -1,10 +1,10 @@
-NeoMutt 20170602 (1.8.3)
+NeoMutt 20170609 (1.8.3)
 Copyright (C) 1996-2016 Michael R. Elkins and others.
 Mutt comes with ABSOLUTELY NO WARRANTY; for details type `mutt -vv'.
 Mutt is free software, and you are welcome to redistribute it
 under certain conditions; type `mutt -vv' for details.
 
-System: Linux 4.11.3-200.fc25.x86_64 (x86_64)
+System: Linux 4.11.3-202.fc25.x86_64 (x86_64)
 libidn: 1.33 (compiled with 1.33)
 hcache backends: tokyocabinet, kyotocabinet, qdbm, gdbm, bdb, lmdb
 
@@ -23,18 +23,18 @@ Compilation CFLAGS: -Wall -pedantic -Wno-long-long -g -O2 -fno-delete-null-point
 
 Compile options:
   +attach_headers_color +bkgdset +color +compose_to_sender +compress +cond_date 
-  +crypt_pgp +crypt_smime +crypt_gpgme +curs_set +debug -dotlock +enable_nls 
-  +encrypt_to_self -exact_address +fcntl +flock -fmemopen 
-  +forgotten_attachments +forwref +futimens +getaddrinfo +getsid +gss +hcache 
-  -homespool -iconv_nontrans +ifdef +imap +index_color +initials +keywords 
-  +libidn +limit_current_thread +lmdb -locales_hack +lua +meta -mixmaster 
-  +multiple_fcc +nested_if +new_mail +nntp +notmuch +pop +progress 
-  +quasi_delete +regcomp +reply_with_xorig +resizeterm +sasl +sensible_browser 
-  -setgid +sidebar +skip_quoted +smtp -ssl_gnutls +ssl_openssl +start_color 
-  +status_color +sun_attachment +timeout +tls_sni +trash +typeahead +wc_funcs 
-EXECSHELL="/bin/sh"
+  +curs_set +debug +encrypt_to_self +fcntl +flock -fmemopen 
+  +forgotten_attachments +forwref +futimens +getaddrinfo +getsid +gnutls +gpgme 
+  +gss +hcache -homespool -iconv_nontrans +ifdef +imap +index_color +initials 
+  +keywords +libidn +limit_current_thread +lmdb -locales_hack +lua +meta 
+  +mixmaster +multiple_fcc +nested_if +new_mail +nls +nntp +notmuch -openssl 
+  +pgp +pop +progress +quasi_delete +regcomp +reply_with_xorig +resizeterm 
+  +sasl +sensible_browser -setgid +sidebar +skip_quoted +smime +smtp 
+  +start_color +status_color +sun_attachment +timeout +tls_sni +trash 
+  +typeahead +wc_funcs 
 ISPELL="/usr/bin/ispell"
 MAILPATH="/var/mail"
+MIXMASTER="mixmaster"
 PKGDATADIR="/usr/local/share/mutt"
 SENDMAIL="/usr/sbin/sendmail"
 SYSCONFDIR="/usr/local/etc"
