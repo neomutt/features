@@ -232,111 +232,111 @@ These are the major features of NeoMutt.
 
 **Index Menu**
 
-| Function                  | Feature              |
-| :------------------------ | :------------------- |
-| compose-to-sender         | Compose to Sender    |
-| limit-current-thread      | Limit Current Thread |
-| catchup                   | NNTP                 |
-| change-newsgroup          | NNTP                 |
-| change-newsgroup-readonly | NNTP                 |
-| followup-message          | NNTP                 |
-| forward-to-group          | NNTP                 |
-| get-children              | NNTP                 |
-| get-message               | NNTP                 |
-| get-parent                | NNTP                 |
-| post-message              | NNTP                 |
-| reconstruct-thread        | NNTP                 |
-| toggle-read               | NNTP                 |
-| change-vfolder            | NotMuch              |
-| entire-thread             | NotMuch              |
-| modify-labels             | NotMuch              |
-| modify-labels-then-hide   | NotMuch              |
-| sidebar-toggle-virtual    | NotMuch              |
-| vfolder-from-query        | NotMuch              |
-| vfolder-window-backward   | NotMuch              |
-| vfolder-window-forward    | NotMuch              |
-| quasi-delete              | Quasi-Delete         |
-| purge-thread              | Trash                |
+| Function                    | Feature              |
+| :-------------------------- | :------------------- |
+| `compose-to-sender`         | Compose to Sender    |
+| `limit-current-thread`      | Limit Current Thread |
+| `catchup`                   | NNTP                 |
+| `change-newsgroup`          | NNTP                 |
+| `change-newsgroup-readonly` | NNTP                 |
+| `followup-message`          | NNTP                 |
+| `forward-to-group`          | NNTP                 |
+| `get-children`              | NNTP                 |
+| `get-message`               | NNTP                 |
+| `get-parent`                | NNTP                 |
+| `post-message`              | NNTP                 |
+| `reconstruct-thread`        | NNTP                 |
+| `toggle-read`               | NNTP                 |
+| `change-vfolder`            | NotMuch              |
+| `entire-thread`             | NotMuch              |
+| `modify-labels`             | NotMuch              |
+| `modify-labels-then-hide`   | NotMuch              |
+| `sidebar-toggle-virtual`    | NotMuch              |
+| `vfolder-from-query`        | NotMuch              |
+| `vfolder-window-backward`   | NotMuch              |
+| `vfolder-window-forward`    | NotMuch              |
+| `quasi-delete`              | Quasi-Delete         |
+| `purge-thread`              | Trash                |
 
 **Pager Menu**
 
-| Function                  | Feature              |
-| :------------------------ | :------------------- |
-| compose-to-sender         | Compose to Sender    |
-| change-newsgroup          | NNTP                 |
-| change-newsgroup-readonly | NNTP                 |
-| followup-message          | NNTP                 |
-| forward-to-group          | NNTP                 |
-| post-message              | NNTP                 |
-| reconstruct-thread        | NNTP                 |
-| change-vfolder            | NotMuch              |
-| entire-thread             | NotMuch              |
-| modify-labels             | NotMuch              |
-| modify-labels-then-hide   | NotMuch              |
-| sidebar-toggle-virtual    | NotMuch              |
-| vfolder-from-query        | NotMuch              |
-| quasi-delete              | Quasi-Delete         |
-| purge-thread              | Trash                |
+| Function                    | Feature              |
+| :-------------------------- | :------------------- |
+| `compose-to-sender`         | Compose to Sender    |
+| `change-newsgroup`          | NNTP                 |
+| `change-newsgroup-readonly` | NNTP                 |
+| `followup-message`          | NNTP                 |
+| `forward-to-group`          | NNTP                 |
+| `post-message`              | NNTP                 |
+| `reconstruct-thread`        | NNTP                 |
+| `change-vfolder`            | NotMuch              |
+| `entire-thread`             | NotMuch              |
+| `modify-labels`             | NotMuch              |
+| `modify-labels-then-hide`   | NotMuch              |
+| `sidebar-toggle-virtual`    | NotMuch              |
+| `vfolder-from-query`        | NotMuch              |
+| `quasi-delete`              | Quasi-Delete         |
+| `purge-thread`              | Trash                |
 
 **Attach Menu**
 
 | Function                  | Feature              |
 | :------------------------ | :------------------- |
-| followup-message          | NNTP                 |
-| forward-to-group          | NNTP                 |
+| `followup-message`        | NNTP                 |
+| `forward-to-group`        | NNTP                 |
 
 **Compose Menu**
 
 | Function                  | Feature              |
 | :------------------------ | :------------------- |
-| attach-news-message       | NNTP                 |
-| edit-followup-to          | NNTP                 |
-| edit-newsgroups           | NNTP                 |
-| edit-x-comment-to         | NNTP                 |
+| `attach-news-message`     | NNTP                 |
+| `edit-followup-to`        | NNTP                 |
+| `edit-newsgroups`         | NNTP                 |
+| `edit-x-comment-to`       | NNTP                 |
 
 **Browser Menu**
 
 | Function                  | Feature              |
 | :------------------------ | :------------------- |
-| catchup                   | NNTP                 |
-| goto-folder               | Sensible Browser     |
-| reload-active             | NNTP                 |
-| subscribe-pattern         | NNTP                 |
-| uncatchup                 | NNTP                 |
-| unsubscribe-pattern       | NNTP                 |
+| `catchup`                 | NNTP                 |
+| `goto-folder`             | Sensible Browser     |
+| `reload-active`           | NNTP                 |
+| `subscribe-pattern`       | NNTP                 |
+| `uncatchup`               | NNTP                 |
+| `unsubscribe-pattern`     | NNTP                 |
 
 ### Commands
 
-| Command             | Feature       |
-| :------------------ | :------------ |
-| shutdown-hook       | Global Hooks  |
-| startup-hook        | Global Hooks  |
-| timeout-hook        | Global Hooks  |
-| finish              | Ifdef         |
-| ifdef               | Ifdef         |
-| ifndef              | Ifdef         |
-| lua                 | Lua Scripting |
-| lua-source          | Lua Scripting |
-| tag-formats         | NotMuch       |
-| tag-transforms      | NotMuch       |
-| unvirtual-mailboxes | NotMuch       |
-| virtual-mailboxes   | NotMuch       |
+| Command               | Feature       |
+| :-------------------- | :------------ |
+| `shutdown-hook`       | Global Hooks  |
+| `startup-hook`        | Global Hooks  |
+| `timeout-hook`        | Global Hooks  |
+| `finish`              | Ifdef         |
+| `ifdef`               | Ifdef         |
+| `ifndef`              | Ifdef         |
+| `lua`                 | Lua Scripting |
+| `lua-source`          | Lua Scripting |
+| `tag-formats`         | NotMuch       |
+| `tag-transforms`      | NotMuch       |
+| `unvirtual-mailboxes` | NotMuch       |
+| `virtual-mailboxes`   | NotMuch       |
 
 ### Colours
 
-| Colour           | Feature              |
-| :--------------- | :------------------- |
-| attach_headers   | Attach Headers Color |
-| index_author     | Index Color          |
-| index_collapsed  | Index Color          |
-| index_date       | Index Color          |
-| index_flags      | Index Color          |
-| index_label      | Index Color          |
-| index_number     | Index Color          |
-| index_size       | Index Color          |
-| index_subject    | Index Color          |
-| index_tag        | Index Color          |
-| index_tags       | Index Color          |
-| progress         | Progress Bar         |
-| sidebar_ordinary | Sidebar              |
+| Colour             | Feature              |
+| :----------------- | :------------------- |
+| `attach_headers`   | Attach Headers Color |
+| `index_author`     | Index Color          |
+| `index_collapsed`  | Index Color          |
+| `index_date`       | Index Color          |
+| `index_flags`      | Index Color          |
+| `index_label`      | Index Color          |
+| `index_number`     | Index Color          |
+| `index_size`       | Index Color          |
+| `index_subject`    | Index Color          |
+| `index_tag`        | Index Color          |
+| `index_tags`       | Index Color          |
+| `progress`         | Progress Bar         |
+| `sidebar_ordinary` | Sidebar              |
 
