@@ -21,22 +21,19 @@ removed very little.
 ### Features
 ### Configure
 
-    Removed
-        --disable-iconv
-        --disable-warnings
-        --enable-compressed
-        --enable-exact-address
-        --enable-external-dotlock
-        --enable-hcache
-        --enable-imap
-        --enable-mailtool
-        --enable-nfs-fix
-        --enable-pop
-        --enable-sidebar
-        --enable-smtp
-        --with-exec-shell
-        --with-included-gettext
-        --with-regex
+These options have been removed from configure.
+
+| Options                   | Reason for Removal   |
+| :------------------------ | -------------------- |
+| --disable-iconv           | Use system version   |
+| --disable-warnings        | Obsolete             |
+| --enable-exact-address    | Obsolete             |
+| --enable-external-dotlock | Obsolete             |
+| --enable-hcache           | Use backend options  |
+| --enable-nfs-fix          | Obsolete             |
+| --with-exec-shell         | Obsolete             |
+| --with-included-gettext   | Use system version   |
+| --with-regex              | Use system version   |
 
 ### Variables
 ### Functions
@@ -48,6 +45,32 @@ removed very little.
 ### Files
 ### Features
 ### Configure
+
+configure has been extensively refactored:
+- Easier to maintain
+- Faster running
+- Fewer unnecessary checks
+- Better at discovering libraries
+- Dependency on the wide-char version of ncurses
+
+NeoMutt declared that
+[POSIX:2001](https://github.com/neomutt/management/tree/master/standard-functions#readme)
+was the base requirement for building.
+This meant that many checks could be removed from configure.
+
+These options have been removed, but the features remain.
+The features didn't have any build dependencies, so they are **always** built
+in.
+
+| Options             | State    |
+| :------------------ | -------- |
+| --enable-compressed | Built in |
+| --enable-imap       | Built in |
+| --enable-mailtool   | Built in |
+| --enable-pop        | Built in |
+| --enable-sidebar    | Built in |
+| --enable-smtp       | Built in |
+
 ### Variables
 ### Functions
 ### Commands
@@ -58,12 +81,17 @@ removed very little.
 ### Files
 ### Features
 ### Configure
-    Added:
-        --disable-po
-        --enable-everything
-        --enable-fmemopen
-        --enable-lua
-        --enable-notmuch
+
+These configure options have been added to NeoMutt.
+
+| Options             | Description                              |
+| :------------------ | :--------------------------------------- |
+| --disable-po        | Don't build the translations (.po files) |
+| --enable-everything | Build everything possible                |
+| --enable-fmemopen   | Unstable feature                         |
+| --enable-lua        | Enable Lua Scripting                     |
+| --enable-notmuch    | Enable NotMuch searching                 |
+
 ### Variables
 ### Functions
 ### Commands

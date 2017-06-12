@@ -90,14 +90,7 @@ code
 		intl
 		PATCHES
 
-configure
-	--disable-po
-	--enable-everything
-	total rewrite / refactor / reindent
-	build in more options
-	better db discoverabilty
-	gcc option to prevent optimisations that cause crashes
-	dependency on wide ncurses
+use external gettext, regex, intl, iconv
 
 contrib
 	vim-syntax
