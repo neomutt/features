@@ -49,7 +49,6 @@
 --oldincludedir
 --pdfdir
 --prefix
---prefix'
 --program-prefix
 --program-suffix
 --program-transform-name

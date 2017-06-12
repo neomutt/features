@@ -20,6 +20,24 @@ removed very little.
 ### Files
 ### Features
 ### Configure
+
+    Removed
+        --disable-iconv
+        --disable-warnings
+        --enable-compressed
+        --enable-exact-address
+        --enable-external-dotlock
+        --enable-hcache
+        --enable-imap
+        --enable-mailtool
+        --enable-nfs-fix
+        --enable-pop
+        --enable-sidebar
+        --enable-smtp
+        --with-exec-shell
+        --with-included-gettext
+        --with-regex
+
 ### Variables
 ### Functions
 ### Commands
@@ -40,6 +58,12 @@ removed very little.
 ### Files
 ### Features
 ### Configure
+    Added:
+        --disable-po
+        --enable-everything
+        --enable-fmemopen
+        --enable-lua
+        --enable-notmuch
 ### Variables
 ### Functions
 ### Commands
