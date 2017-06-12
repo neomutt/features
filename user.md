@@ -86,16 +86,17 @@ NeoMutt is moving forward and some things are getting changed.
 
 ### Features
 
-These six features have changed slightly -- they were adopted by upstream Mutt!
+These seven features have changed slightly -- they were adopted by upstream Mutt!
 
-| Feature             | Description                                        | In NeoMutt  | In Mutt            |
-| :------------------ | :------------------------------------------------- | :---------- | :----------------- |
-| Sidebar             | Overview of mailboxes                              | 2016-03-07  | 2016-07-06 (1.6.2) |
-| Trash Folder        | Automatically move deleted emails to a trash bin   | 2016-03-07  | 2016-08-18 (1.7.0) |
-| TLS-SNI             | Negotiate with a server for a TLS/SSL certificate  | 2016-03-07  | 2017-04-12 (1.8.1) |
-| Compressed Folders  | Read from/write to compressed mailboxes            | 2016-05-30  | 2016-12-04 (1.7.2) |
-| Kyoto Cabinet       | Kyoto Cabinet backend for the header cache         | 2016-10-02  | 2017-04-12 (1.8.1) |
-| LMDB                | LMDB backend for the header cache                  | 2016-07-23  | 2017-04-12 (1.8.1) |
+| Feature            | Description                                       | In NeoMutt | In Mutt            |
+| :----------------- | :------------------------------------------------ | :--------- | :----------------- |
+| Compressed Folders | Read from/write to compressed mailboxes           | 2016-05-30 | 2016-12-04 (1.7.2) |
+| Encrypt-to-Self    | Save a self-encrypted copy of emails              | 2016-07-23 | 2017-05-30 (1.8.3) |
+| Kyoto Cabinet      | Kyoto Cabinet backend for the header cache        | 2016-10-02 | 2017-04-12 (1.8.1) |
+| LMDB               | LMDB backend for the header cache                 | 2016-07-23 | 2017-04-12 (1.8.1) |
+| Sidebar            | Overview of mailboxes                             | 2016-03-07 | 2016-07-06 (1.6.2) |
+| TLS-SNI            | Negotiate with a server for a TLS/SSL certificate | 2016-03-07 | 2017-04-12 (1.8.1) |
+| Trash Folder       | Automatically move deleted emails to a trash bin  | 2016-03-07 | 2016-08-18 (1.7.0) |
 
 Mutt now supports the same six header-cache backends, but there is one important
 difference.  Mutt can only compile-in one backend: NeoMutt can have several
@@ -135,132 +136,207 @@ No colours have been removed in NeoMutt.
 
 ## Added to NeoMutt
 
+Now the fun bit: all the things that NeoMutt has that Mutt doesn't.
+
 ### Features
 
-These are the major features of NeoMutt that haven't been adopted by Mutt.
+These are the major features of NeoMutt.
 
-| Feature                  | Description                                                            | Since        | Status     |
-| :----------------------- | :--------------------------------------------------------------------- | ------------ | ---------- |
-| Attach Headers Color     | Color attachment headers using regexp, just like mail bodies           | 2016-09-10   | stable     |
-| Compose to Sender        | Send new mail to the sender of the current mail                        | 2016-10-02   | stable     |
-| Conditional Dates        | Use rules to choose date format                                        | 2016-03-07   | stable     |
-| Encrypt-to-Self          | Save a self-encrypted copy of emails                                   | 2016-07-23   | stable     |
-| Fmemopen                 | Replace some temporary files with memory buffers                       | 2016-03-07   | disabled   |
-| Forgotten Attachment     | Alert user when (s)he forgets to attach a file to an outgoing email.   | 2016-09-10   | stable     |
-| Global Hooks             | Define actions to run globally within Mutt                             | 2016-08-08   | stable     |
-| Ifdef                    | Conditional config options                                             | 2016-03-07   | stable     |
-| Index Color              | Custom rules for theming the email index                               | 2016-03-07   | stable     |
-| Initials Expando         | Expando for author's initials                                          | 2016-03-07   | stable     |
-| Keywords                 | Labels/Tagging for emails                                              | 2016-05-30   | stable     |
-| Limit Current Thread     | Focus on one Email Thread                                              | 2016-03-28   | stable     |
-| Multiple FCC             | Save multiple copies of outgoing mail                                  | 2016-08-08   | stable     |
-| Nested If                | Allow complex nested conditions in format strings                      | 2016-03-07   | stable     |
-| New Mail                 | Execute a command upon the receipt of new mail.                        | 2016-07-23   | stable     |
-| NNTP                     | Talk to a Usenet news server                                           | 2016-05-30   | stable     |
-| Notmuch                  | Email search engine                                                    | 2016-03-17   | stable     |
-| Progress Bar             | Show a visual progress bar on slow operations                          | 2016-03-07   | stable     |
-| Quasi-Delete             | Mark emails that should be hidden, but not deleted                     | 2016-03-07   | stable     |
-| Reply With X-Original-To | Direct reply to email using X-Original-To header                       | 2016-09-10   | stable     |
-| Sensible Browser         | Make the file browser behave                                           | 2016-09-10   | stable     |
-| Skip Quoted              | Leave some context visible                                             | 2016-03-28   | stable     |
-| Status Color             | Custom rules for theming the status bar                                | 2016-03-07   | stable     |
+| Feature                  | Description                                                       | Since      | Status   |
+| :----------------------- | :---------------------------------------------------------------- | :--------- | :------- |
+| Attach Headers Color     | Color attachment headers using regexp, just like mail bodies      | 2016-09-10 | stable   |
+| Compose to Sender        | Send new mail to the sender of the current mail                   | 2016-10-02 | stable   |
+| Conditional Dates        | Use rules to choose date format                                   | 2016-03-07 | stable   |
+| Fmemopen                 | Replace some temporary files with memory buffers                  | 2016-03-07 | disabled |
+| Forgotten Attachment     | Alert user when they forget to attach a file to an outgoing email | 2016-09-10 | stable   |
+| Global Hooks             | Define actions to run globally within Mutt                        | 2016-08-08 | stable   |
+| Ifdef                    | Conditional config options                                        | 2016-03-07 | stable   |
+| Index Color              | Custom rules for theming the email index                          | 2016-03-07 | stable   |
+| Initials Expando         | Expando for author's initials                                     | 2016-03-07 | stable   |
+| Keywords                 | Labels/Tagging for emails                                         | 2016-05-30 | stable   |
+| Limit Current Thread     | Focus on one Email Thread                                         | 2016-03-28 | stable   |
+| Multiple FCC             | Save multiple copies of outgoing mail                             | 2016-08-08 | stable   |
+| Nested If                | Allow complex nested conditions in format strings                 | 2016-03-07 | stable   |
+| New Mail                 | Execute a command upon the receipt of new mail                    | 2016-07-23 | stable   |
+| NNTP                     | Talk to a Usenet news server                                      | 2016-05-30 | stable   |
+| Notmuch                  | Email search engine                                               | 2016-03-17 | stable   |
+| Progress Bar             | Show a visual progress bar on slow operations                     | 2016-03-07 | stable   |
+| Quasi-Delete             | Mark emails that should be hidden, but not deleted                | 2016-03-07 | stable   |
+| Reply With X-Original-To | Direct reply to email using X-Original-To header                  | 2016-09-10 | stable   |
+| Sensible Browser         | Make the file browser behave                                      | 2016-09-10 | stable   |
+| Skip Quoted              | Leave some context visible                                        | 2016-03-28 | stable   |
+| Status Color             | Custom rules for theming the status bar                           | 2016-03-07 | stable   |
 
 ### Variables
 
-    abort_noattach
-    ask_follow_up
-    ask_x_comment_to
-    attach_keyword
-    catchup_newsgroup
-    collapse_all
-    debug_file
-    debug_level
-    empty_subject
-    flag_chars
-    followup_to_poster
-    forward_references
-    from_chars
-    group_index_format
-    header_cache_backend
-    header_cache_pagesize
-    header_color_partial
-    history_remove_dups
-    inews
-    keywords_legacy
-    keywords_standard
-    mime_subject
-    newsgroups_charset
-    newsrc
-    news_cache_dir
-    news_server
-    new_mail_command
-    nm_db_limit
-    nm_default_uri
-    nm_exclude_tags
-    nm_hidden_tags
-    nm_open_timeout
-    nm_query_type
-    nm_query_window_current_position
-    nm_query_window_current_search
-    nm_query_window_duration
-    nm_query_window_timebase
-    nm_record
-    nm_record_tags
-    nm_unread_tag
-    nntp_authenticators
-    nntp_context
-    nntp_listgroup
-    nntp_load_description
-    nntp_pass
-    nntp_poll
-    nntp_user
-    pgp_encrypt_self
-    pgp_self_encrypt
-    pgp_self_encrypt_as
-    post_moderated
-    reply_with_xorig
-    save_unsubscribed
-    show_multipart_alternative
-    show_new_news
-    show_only_unread
-    sidebar_on_right
-    skip_quoted_offset
-    smime_encrypt_self
-    smime_self_encrypt
-    smime_self_encrypt_as
-    ssl_verify_partial_chains
-    vfolder_format
-    virtual_spoolfile
-    xlabel_delimiter
-    x_comment_to
+| Variable                           | Feature                  |
+| :--------------------------------- | :----------------------- |
+| `collapse_all`                     |                          |
+| `debug_file`                       |                          |
+| `debug_level`                      |                          |
+| `empty_subject`                    |                          |
+| `flag_chars`                       |                          |
+| `forward_references`               |                          |
+| `from_chars`                       |                          |
+| `header_cache_backend`             |                          |
+| `show_multipart_alternative`       |                          |
+| `abort_noattach`                   | Forgotten Attachment     |
+| `attach_keyword`                   | Forgotten Attachment     |
+| `keywords_legacy`                  | Keywords                 |
+| `keywords_standard`                | Keywords                 |
+| `xlabel_delimiter`                 | Keywords                 |
+| `new_mail_command`                 | New Mail                 |
+| `ask_follow_up`                    | NNTP                     |
+| `ask_x_comment_to`                 | NNTP                     |
+| `catchup_newsgroup`                | NNTP                     |
+| `followup_to_poster`               | NNTP                     |
+| `group_index_format`               | NNTP                     |
+| `inews`                            | NNTP                     |
+| `mime_subject`                     | NNTP                     |
+| `news_cache_dir`                   | NNTP                     |
+| `newsgroups_charset`               | NNTP                     |
+| `newsrc`                           | NNTP                     |
+| `news_server`                      | NNTP                     |
+| `nntp_authenticators`              | NNTP                     |
+| `nntp_context`                     | NNTP                     |
+| `nntp_listgroup`                   | NNTP                     |
+| `nntp_load_description`            | NNTP                     |
+| `nntp_pass`                        | NNTP                     |
+| `nntp_poll`                        | NNTP                     |
+| `nntp_user`                        | NNTP                     |
+| `post_moderated`                   | NNTP                     |
+| `save_unsubscribed`                | NNTP                     |
+| `show_new_news`                    | NNTP                     |
+| `show_only_unread`                 | NNTP                     |
+| `x_comment_to`                     | NNTP                     |
+| `nm_db_limit`                      | NotMuch                  |
+| `nm_default_uri`                   | NotMuch                  |
+| `nm_exclude_tags`                  | NotMuch                  |
+| `nm_hidden_tags`                   | NotMuch                  |
+| `nm_open_timeout`                  | NotMuch                  |
+| `nm_query_type`                    | NotMuch                  |
+| `nm_query_window_current_position` | NotMuch                  |
+| `nm_query_window_current_search`   | NotMuch                  |
+| `nm_query_window_duration`         | NotMuch                  |
+| `nm_query_window_timebase`         | NotMuch                  |
+| `nm_record`                        | NotMuch                  |
+| `nm_record_tags`                   | NotMuch                  |
+| `nm_unread_tag`                    | NotMuch                  |
+| `vfolder_format`                   | NotMuch                  |
+| `virtual_spoolfile`                | NotMuch                  |
+| `reply_with_xorig`                 | Reply With X-Original-To |
+| `sidebar_on_right`                 | Sidebar                  |
+| `skip_quoted_offset`               | Skip Quoted              |
 
 ### Functions
 
+**Index Menu**
+
+| Function                  | Feature              |
+| :------------------------ | :------------------- |
+| compose-to-sender         | Compose to Sender    |
+| limit-current-thread      | Limit Current Thread |
+| catchup                   | NNTP                 |
+| change-newsgroup          | NNTP                 |
+| change-newsgroup-readonly | NNTP                 |
+| followup-message          | NNTP                 |
+| forward-to-group          | NNTP                 |
+| get-children              | NNTP                 |
+| get-message               | NNTP                 |
+| get-parent                | NNTP                 |
+| post-message              | NNTP                 |
+| reconstruct-thread        | NNTP                 |
+| toggle-read               | NNTP                 |
+| change-vfolder            | NotMuch              |
+| entire-thread             | NotMuch              |
+| modify-labels             | NotMuch              |
+| modify-labels-then-hide   | NotMuch              |
+| sidebar-toggle-virtual    | NotMuch              |
+| vfolder-from-query        | NotMuch              |
+| vfolder-window-backward   | NotMuch              |
+| vfolder-window-forward    | NotMuch              |
+| quasi-delete              | Quasi-Delete         |
+| purge-thread              | Trash                |
+
+**Pager Menu**
+
+| Function                  | Feature              |
+| :------------------------ | :------------------- |
+| compose-to-sender         | Compose to Sender    |
+| change-newsgroup          | NNTP                 |
+| change-newsgroup-readonly | NNTP                 |
+| followup-message          | NNTP                 |
+| forward-to-group          | NNTP                 |
+| post-message              | NNTP                 |
+| reconstruct-thread        | NNTP                 |
+| change-vfolder            | NotMuch              |
+| entire-thread             | NotMuch              |
+| modify-labels             | NotMuch              |
+| modify-labels-then-hide   | NotMuch              |
+| sidebar-toggle-virtual    | NotMuch              |
+| vfolder-from-query        | NotMuch              |
+| quasi-delete              | Quasi-Delete         |
+| purge-thread              | Trash                |
+
+**Attach Menu**
+
+| Function                  | Feature              |
+| :------------------------ | :------------------- |
+| followup-message          | NNTP                 |
+| forward-to-group          | NNTP                 |
+
+**Compose Menu**
+
+| Function                  | Feature              |
+| :------------------------ | :------------------- |
+| attach-news-message       | NNTP                 |
+| edit-followup-to          | NNTP                 |
+| edit-newsgroups           | NNTP                 |
+| edit-x-comment-to         | NNTP                 |
+
+**Browser Menu**
+
+| Function                  | Feature              |
+| :------------------------ | :------------------- |
+| catchup                   | NNTP                 |
+| goto-folder               | Sensible Browser     |
+| reload-active             | NNTP                 |
+| subscribe-pattern         | NNTP                 |
+| uncatchup                 | NNTP                 |
+| unsubscribe-pattern       | NNTP                 |
+
 ### Commands
-    finish
-    ifdef
-    ifndef
-    lua
-    lua-source
-    shutdown-hook
-    startup-hook
-    tag-formats
-    tag-transforms
-    timeout-hook
-    unvirtual-mailboxes
-    virtual-mailboxes
+
+| Command             | Feature       |
+| :------------------ | :------------ |
+| shutdown-hook       | Global Hooks  |
+| startup-hook        | Global Hooks  |
+| timeout-hook        | Global Hooks  |
+| finish              | Ifdef         |
+| ifdef               | Ifdef         |
+| ifndef              | Ifdef         |
+| lua                 | Lua Scripting |
+| lua-source          | Lua Scripting |
+| tag-formats         | NotMuch       |
+| tag-transforms      | NotMuch       |
+| unvirtual-mailboxes | NotMuch       |
+| virtual-mailboxes   | NotMuch       |
 
 ### Colours
-    attach_headers
-    index_author
-    index_collapsed
-    index_date
-    index_flags
-    index_label
-    index_number
-    index_size
-    index_subject
-    index_tag
-    index_tags
-    progress
-    sidebar_ordinary
+
+| Colour           | Feature              |
+| :--------------- | :------------------- |
+| attach_headers   | Attach Headers Color |
+| index_author     | Index Color          |
+| index_collapsed  | Index Color          |
+| index_date       | Index Color          |
+| index_flags      | Index Color          |
+| index_label      | Index Color          |
+| index_number     | Index Color          |
+| index_size       | Index Color          |
+| index_subject    | Index Color          |
+| index_tag        | Index Color          |
+| index_tags       | Index Color          |
+| progress         | Progress Bar         |
+| sidebar_ordinary | Sidebar              |
+

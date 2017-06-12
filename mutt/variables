@@ -83,6 +83,7 @@ header
 header_cache
 header_cache_compress
 header_cache_pagesize
+header_color_partial
 help
 hidden_host
 hide_limited
@@ -92,6 +93,7 @@ hide_top_limited
 hide_top_missing
 history
 history_file
+history_remove_dups
 honor_disposition
 honor_followup_to
 hostname
@@ -181,6 +183,8 @@ pgp_long_ids
 pgp_mime_auto
 pgp_replyinline
 pgp_retainable_sigs
+pgp_self_encrypt
+pgp_self_encrypt_as
 pgp_show_unusable
 pgp_sign_as
 pgp_sign_command
@@ -281,6 +285,8 @@ smime_import_cert_command
 smime_is_default
 smime_keys
 smime_pk7out_command
+smime_self_encrypt
+smime_self_encrypt_as
 smime_sign_command
 smime_sign_digest_alg
 smime_sign_opaque_command
@@ -311,6 +317,7 @@ ssl_use_tlsv1_1
 ssl_use_tlsv1_2
 ssl_verify_dates
 ssl_verify_host
+ssl_verify_partial_chains
 status_chars
 status_format
 status_on_top
